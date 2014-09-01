@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.12)
 
 project(travisty)
+
 if(CXXVERSION EQUAL "98")
   message("Using C++ 98")
   add_compile_options("-std=c++98")
