@@ -5,15 +5,16 @@ compiler:
   - gcc
 
 env:
-  - BUILD_TYPE=Debug
-  - BUILD_TYPE=Release
+#  - BUILD_TYPE=Debug
+#  - BUILD_TYPE=Release
   - CXXVERSION=98
   - CXXVERSION=03
   - CXXVERSION=11
   - CXXVERSION=1y
 
 install:
-  - cmake -H. -BBuild -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCXXVERSION=$CXXVERSION
+#  - cmake -H. -BBuild -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCXXVERSION=$CXXVERSION
+  - cmake -H. -BBuild -DCXXVERSION=$CXXVERSION
   - cd Build
   - make
   - cd ..
